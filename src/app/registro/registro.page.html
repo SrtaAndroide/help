@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-toolbar color="header" class="ion-text-center">
+    <ion-title>Registro</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button href="/login"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<body>
+  <br>
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+    </ion-card-header>
+      <form [formGroup]="formularioRegistro" (keyup.enter)="guardar()">
+        <ion-item>
+          <ion-label class="center" position="floating">Nombres</ion-label>
+          <ion-input formControlName="nombre"></ion-input>
+        </ion-item>
+        
+        <ion-item>
+          <ion-label class="center" position="floating">Apellidos</ion-label>
+          <ion-input formControlName="apellidos"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label class="center" position="floating">Rut</ion-label>
+          <ion-input formControlName="rut"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label class="center" position="floating">Mail Duoc</ion-label>
+          <ion-input formControlName="mail_duoc"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label class="center" position="floating">Contraseña</ion-label>
+          <ion-input formControlName="password" type="password" ></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label class="center" position="floating">Confirmar contraseña</ion-label>
+          <ion-input formControlName="confirmacionPassword" type="password"></ion-input>
+        </ion-item>
+
+        <br>
+        <ion-button color="boton" class="center" (click)="guardar()">Registrarse
+        </ion-button>
+      </form>
+  </ion-card>
+</ion-content>
+</body>

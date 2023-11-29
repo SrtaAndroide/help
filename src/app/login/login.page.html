@@ -1,0 +1,40 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="header">
+    <ion-title class="ion-text-center">
+      Te Llevo App
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-card class="elegant-card">
+    <ion-card-content>
+      <form [formGroup]="formularioLogin">
+        <ion-item>
+          <ion-label position="floating">Mail Duoc</ion-label>
+          <ion-input formControlName="mail_duoc"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Password</ion-label>
+          <ion-input formControlName="password" type="password"></ion-input>
+        </ion-item>
+      </form>
+
+      <ion-button expand="full" color="elegant-button" class="elegant-button" (click)="ingresar()">
+        Ingresar
+      </ion-button>
+
+      <ion-note class="forgot-password">
+        <a href="rpassword">¿Olvidaste tu contraseña?</a>
+      </ion-note>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar class="elegant-footer">
+    <ion-button [routerLink]="['/registro']" expand="full" color="elegant-button">
+      REGISTRATE
+    </ion-button>
+  </ion-toolbar>
+</ion-footer>

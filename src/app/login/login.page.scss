@@ -1,0 +1,47 @@
+
+/* Estilos adicionales para centrar otros elementos si es necesario */
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  text-transform: uppercase;
+  background-color: transparent !important;
+  color: #3498db;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+/* Establece estilos para centrar el botón en el pie de página */
+ion-footer ion-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Estilos para el botón "REGISTRATE" */
+  center{
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+  ion-button.elegant-button-ingresar {
+    background-color: #3498db; /* Puedes ajustar el color según sea necesario */
+    color: #ffffff;
+
+  }
+  ion-footer ion-button {
+    text-transform: uppercase;
+    background-color: #3498db;
+    color: #ffffff;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 10px;
+  }
+  

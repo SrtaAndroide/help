@@ -1,0 +1,26 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="header">
+    <ion-title class="ion-text-center">Inicio</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-card class="app-card">
+    <h1 class="app-title">Bienvenido A TeLlevoApp!!</h1>
+    <h4 class="app-subtitle">¿Cómo deseas ingresar?</h4>
+
+    <ion-button expand="full" color="boton" [routerLink]="['/conductor']">
+      Conductor
+    </ion-button>
+
+    <ion-button expand="full" color="boton" [routerLink]="['/alumno']">
+      Pasajero
+    </ion-button>
+  </ion-card>
+</ion-content>
+
+<ion-footer class="ion-padding">
+  <ion-button expand="full" color="boton" (click)="CerrarSesion()">
+    Cerrar Sesión
+  </ion-button>
+</ion-footer>

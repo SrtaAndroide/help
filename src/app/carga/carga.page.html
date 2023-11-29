@@ -1,0 +1,27 @@
+<ion-content class="ion-padding">
+
+  <ion-card *ngIf="viaje">
+    <ion-card-header  class="center" color="boton">
+     <h1> {{ viaje.origen }} a {{ viaje.destino }}</h1> 
+    </ion-card-header>
+
+    <ion-card-content>
+      <br>
+      <h1>Fecha: {{ viaje.fecha }}</h1>
+      <h1>Hora de Salida: {{ viaje.hora }}</h1>
+      <br>
+        <h1>
+        Información Vehiculo
+      </h1>
+      <br>
+      <h1>{{ viaje.marca }} {{ viaje.modelo }}</h1>
+      <h1>Patente: {{ viaje.patente }}</h1>
+      <h1>Color: {{ viaje.color }}</h1>
+      </ion-card-content>
+  </ion-card>
+  <br>
+  <br>
+  <p>Esperando completar los asientos disponibles</p>
+
+  <ion-progress-bar type="indeterminate"></ion-progress-bar>
+</ion-content>

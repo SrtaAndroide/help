@@ -1,0 +1,69 @@
+// Component SCSS
+
+// Fondo de componente
+ion-content {
+    --ion-background-color: rgba(52, 152, 219, 0.8) !important; // Tono azul con transparencia
+    background-image: url(../assets/utomovil.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+// Estilo de título
+ion-title {
+    color: #8e44ad; // Color púrpura neon
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.9);
+}
+
+// Estilo de tarjeta
+ion-card {
+    background: rgba(52, 152, 219, 0.9) !important; // Tono azul con transparencia
+    border-radius: 10px; // Bordes redondeados
+}
+
+// Estilo de formulario
+ion-item {
+    --ion-background-color: rgba(52, 152, 219, 0.2) !important; // Tono azul claro con transparencia
+    border-bottom: 1px solid #8e44ad; // Línea púrpura neon
+}
+
+// Estilo de botón
+ion-button {
+    --ion-background-color: rgba(52, 152, 219, 0.5) !important; // Tono azul con transparencia
+    color: #8e44ad; // Color púrpura neon
+    text-transform: uppercase;
+    border: 2px solid #8e44ad; // Borde púrpura neon
+    border-radius: 10px;
+    margin: 5px;
+    padding: 10px;
+
+    &:hover {
+        background-color: #8e44ad; // Fondo al pasar el ratón
+        color: #ffffff; // Color del texto al pasar el ratón
+    }
+}
+
+// Estilo de pie de página
+ion-footer {
+    --ion-background-color: rgba(52, 152, 219, 0.8) !important; // Tono azul con transparencia
+}
+
+// Estilo de botón en el pie de página
+ion-footer ion-button {
+    --ion-background-color: rgba(52, 152, 219, 0.5) !important; // Tono azul con transparencia
+    color: #8e44ad; // Color púrpura neon
+    text-transform: uppercase;
+    border: 2px solid #8e44ad; // Borde púrpura neon
+    border-radius: 10px;
+    margin: 5px;
+    padding: 10px;
+
+    &:hover {
+        background-color: #8e44ad; // Fondo al pasar el ratón
+        color: #ffffff; // Color del texto al pasar el ratón
+    }
+}
+
+/* Fondo de la aplicación */
+
+
